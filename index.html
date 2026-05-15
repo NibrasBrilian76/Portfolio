@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Developer Profesional</title>
+    <link rel="stylesheet" href="CSS/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Dev<span class="gradient-text">.pro</span></div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="stars"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Hi, I am <span class="gradient-text animate-glow">Shonou</span></h1>
+            <p class="hero-subtitle">Creating Amazing Digital Experiences</p>
+            <p class="hero-description">I am a Developer full-stack who is passionate about building modern and responsive web applications with the latest technologies.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Contact Me</button>
+                <button class="btn btn-secondary" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">View Project</button>
+            </div>
+        </div>
+        <div class="hero-animation">
+            <div class="floating-cube"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a vocational high school student with <span class="highlight">1+ Years</span> of experience in developing innovative and scalable web applications.</p>
+                    <p>My expertise spans front-end development, back-end development, and full-stack solutions. I enjoy new challenges and am constantly learning the latest technologies to deliver the best solutions.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number gradient-text">50+</span>
+                            <span class="stat-label">Project Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number gradient-text">30+</span>
+                            <span class="stat-label">Satisfied Clients</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number gradient-text">1+</span>
+                            <span class="stat-label">Years of experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="neon-frame">
+                        <img src="assets/foto-1.jpeg" alt="Foto Profil">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Latest <span class="gradient-text">Project</span></h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Platform e-commerce modern with React, Node.js, dan MongoDB. Integrated payment feature and admin dashboard.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <div class="project-content">
+                        <h3>Social Media App</h3>
+                        <p>A social media app with real-time messaging using Firebase and Vue.js. The interface is intuitive and responsive.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">WebSocket</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <div class="project-content">
+                        <h3>Analytics Dashboard</h3>
+                        <p>Powerful analytics dashboard with real-time data visualization. Using Chart.js and REST API.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Chart.js</span>
+                            <span class="tag">REST API</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                    <div class="project-content">
+                        <h3>Learning Platform</h3>
+                        <p>Platform pembelajaran online dengan video streaming, kuis interaktif, dan tracking progress siswa.</p>
+                        <div class="project-tags">
+                            <span class="tag">Django</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">AWS</span>
+                        </div>
+                        <a href="#" class="project-link">Lihat Proyek →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"></div>
+                    <div class="project-content">
+                        <h3>Mobile App Design</h3>
+                        <p>Application mobile hybrid with React Native. Fitur maps, push notifications, dan offline mode.</p>
+                        <div class="project-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Maps API</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);"></div>
+                    <div class="project-content">
+                        <h3>AI Chatbot System</h3>
+                        <p>AI-based Chatbot system with NLP. Integration with WhatsApp and Telegram fot customer service.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">NLP</span>
+                            <span class="tag">APIs</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical <span class="gradient-text">expertise</span></h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-title">Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>HTML/CSS</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 92%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>React.js</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 88%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Vue.js</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-title">Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Node.js</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Express.js</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 88%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Python/Django</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>PHP/Laravel</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-title">Database & Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>MongoDB</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 87%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>PostgreSQL</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Git & GitHub</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 93%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Docker</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's <span class="gradient-text">collaborate</span></h2>
+            <p class="contact-subtitle">I am open to new opportunities and interesting project.</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:adio.ismail.1983@gmail.com">adio.ismail.1983@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+6285142279272">+62 851-4227-9272</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Nganjuk, East Java, Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nama Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Pesan Anda..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Links -->
+    <div class="social-links">
+        <a href="https://github.com/NibrasBrilian76" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.tiktok.com/@brasz_ni_bre" class="social-link" title="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/brasz_brilz/" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Dev.Nibras - Portfolio Portfolio. Dibuat dengan <span class="gradient-text">❤️</span> oleh Developer.</p>
+    </footer>
+
+    <script src="JavaScript/portfolio.js"></script>
+</body>
+</html>
